@@ -8,7 +8,7 @@ import projImg8 from "../assets/img/project8.gif";
 import projImg9 from "../assets/img/project9.gif";
 import projImg2 from "../assets/img/project2.gif";
 import projImg3 from "../assets/img/churn.gif";
-import video1 from "../assets/img/project1.mp4";
+import video1 from "../assets/img/video1.mp4";
 import video5 from "../assets/img/project-5.mp4";
 import video6 from "../assets/img/project6.mp4";
 import video7 from "../assets/img/project7.mp4";
@@ -23,7 +23,7 @@ export const Projects = () => {
       title: "Trade-X",
       description: "Smart Trades, Bigger Gains.",
       extendedDescription:
-        "Tech Stack: Deep reinforcement learning algorithms (PPO, A2C), MERN stack, Python, API. TradeX is an automated trading platform utilizing advanced deep reinforcement learning to predict market trends and execute profitable trades. Our bot continuously adapts to market conditions, ensuring optimal trading decisions. TradeX offers a seamless, intelligent trading experience, minimizing risks and maximizing returns.This project even help me understand ",
+        "Tech Stack: Deep reinforcement learning algorithms (PPO, A2C), MERN stack, Python, API. TradeX is an automated trading platform utilizing advanced deep reinforcement learning to predict market trends and execute profitable trades. Our bot continuously adapts to market conditions, ensuring optimal trading decisions. TradeX offers a seamless, intelligent trading experience, minimizing risks and maximizing returns.During building Trade-x I got to know about various aspects of product management like market research, Prioritizing ideas and features,Prototyping potential solutions,Creating roadmaps to guide development ",
       videoUrl: video1,
       link: "https://github.com/ajinkyajadhav0722/TRADE-x/tree/master",
       imgUrl: projImg1,
@@ -50,7 +50,7 @@ export const Projects = () => {
       videoUrl: video5,
       imgUrl: projImg5,
       extendedDescription:
-        "Tech Stack:Machine learning, NLP, | dataset: Amazon Alexa review | In this sentiment analysis project, I utilize sophisticated XGBoost boosting algorithms and CountVectorizer techniques to delve into the sentiments expressed within Amazon Alexa reviews. By harnessing the power of machine learning, I aim to uncover nuanced insights from the dataset, shedding light on customer satisfaction, preferences, and feedback trends associated with Alexa products. This project not only showcases my proficiency in natural language processing and machine learning but also highlights my ability to derive actionable insights from large-scale datasets to inform strategic business decisions.",
+        "Tech Stack:Machine learning, NLP, | dataset: Amazon Alexa review | In this sentiment analysis project, I utilize sophisticated XGBoost boosting algorithms and CountVectorizer techniques to delve into the sentiments expressed within Amazon Alexa reviews. By harnessing the power of machine learning, I aim to uncover nuanced insights from the dataset, shedding light on customer satisfaction, preferences, and feedback trends associated with Alexa products. This project not only showcases my proficiency in natural language processing and machine learning but also highlights my ability to derive actionable insights from large-scale datasets to inform strategic business decision. ",
       link: "https://github.com/ajinkyajadhav0722/Sentiment-analysis-",
     },
     {
