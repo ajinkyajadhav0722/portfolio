@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav,Carousel  } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project1.gif";
 import projImg5 from "../assets/img/project-5.gif";
@@ -6,6 +6,7 @@ import projImg6 from "../assets/img/project6.gif";
 import projImg7 from "../assets/img/project7.gif";
 import projImg8 from "../assets/img/project8.gif";
 import projImg9 from "../assets/img/project9.gif";
+import projImg10 from "../assets/img/project10.gif";
 import projImg2 from "../assets/img/project2.gif";
 import projImg3 from "../assets/img/churn.gif";
 import video1 from "../assets/img/video1.mp4";
@@ -14,6 +15,11 @@ import video6 from "../assets/img/project6.mp4";
 import video7 from "../assets/img/project7.mp4";
 import video8 from "../assets/img/project8.mp4";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import certImg1 from "../assets/img/pm certificate.jpg"; // Add paths for certificate images
+import certImg2 from "../assets/img/cisco certificate.jpg";
+import certImg3 from "../assets/img/Tata.jpg";
+import certImg4 from "../assets/img/accentue.jpg";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -36,6 +42,7 @@ export const Projects = () => {
         "Tech Stack: MERN stack, REST api, API.FashionUp is a cutting-edge platform built with the MERN stack, utilizing a geolocation API to find users' locations. Our service delivers trendy clothes within 10 minutes, sourcing from local shops and promoting them or from our central godowns.Creating FashionUp enhanced my product management skills by requiring me to oversee the entire development process, coordinate with stakeholders, conduct market research.Additionally, I employed agile methodologies to iterate quickly, manage tasks efficiently, and adapt to changing requirements. Experience lightning-fast fashion delivery and support local businesses with FashionUp. Stay stylish, effortlessly and instantly!",
       link: "https://github.com/ajinkyajadhav0722/Fashion-up",
     },
+    
     {
       title: "Churn Analysis",
       description: "Predict. Prevent. Retain",
@@ -91,6 +98,39 @@ export const Projects = () => {
         "In the SQL-based Music Store Sales Analysis project, I utilized SQL queries to extract and analyze data from a comprehensive sales database of a music store. This project involved examining sales trends over time, identifying top-selling products, understanding customer preferences based on purchase behavior, and generating reports to provide actionable insights for business decisions. By applying SQL skills such as data manipulation, aggregation, and joining across multiple tables, I enhanced my proficiency in data analysis and gained valuable experience in extracting meaningful business intelligence from large datasets.",
       link: "https://github.com/ajinkyajadhav0722/musicstore_sales_analysis_SQL",
     },
+    
+    {
+      title: "T20 world cup 2024-Analysis",
+      description:
+        "Interesting insights on the most memorable cricket league",
+      
+      imgUrl: projImg10,
+      extendedDescription:
+        "Tech stack: SQL|python|Powber Bi|Excel.In these project I used the T20 worldcup dataset from kaggele. these dataset had entry of each and every delivery of all matches. I used python for data cleaning like droped some coloumns and divided data into india_batting,india_bowling and all_team. these data was then stored in sql for further analysis and quering, which was then used in PowerBI for creating dashboard. these data provides intresting insights like total runs made, total runs by indian player also some other insights like player with most golden ducks.  .",
+      link: "https://github.com/ajinkyajadhav0722/T20-world-cup-2024-analysis-batting-edition-",
+    },
+    
+  ];
+
+  const certifications = [
+    {
+      title: "Google Project Management",
+
+      imgSrc: certImg1, // Add image source
+    },
+    {
+      title: "Cisco-Data Analytics Essentials",
+      
+      imgSrc: certImg2, // Add image source
+    },
+    {
+      title: "Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage",
+      imgSrc: certImg3, // Add image source
+    },
+    {
+      title: "Data Analytics and Visualization Job Simulation by Accenture",
+      imgSrc: certImg3, // Add image source
+    },
   ];
 
   return (
@@ -109,11 +149,11 @@ export const Projects = () => {
                   <p>
                     Working on these projects has significantly enhanced my
                     skills by providing hands-on experience in both{" "}
-                    <b>product management and data analysis</b>.I've learned to
+                    <b>product management and data analysis</b>. I've learned to
                     conduct market and user research, apply agile methodologies,
                     and develop detailed product roadmaps. Additionally, I've
                     gained proficiency in data analysis techniques, enabling me
-                    to derive insights from complex datasets
+                    to derive insights from complex datasets.
                   </p>
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -153,16 +193,22 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          <h5>Certifications</h5>
-                          <br />
-                          1.GCCP Google Cloud Skills Boost <br />
-                          2.Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage<br/>
-                          3.Cisco-Data Analytics Essentials
-
-
-
-                        </p>
+                        <p><b>Certifications</b></p>
+                        <Carousel>
+                          {certifications.map((certification, index) => (
+                            <Carousel.Item key={index}>
+                              <img
+                                className="d-block w-50 mx-auto" // Control image size and center it
+                                src={certification.imgSrc}
+                                alt={certification.title}
+                              />
+                              <div className="carousel-caption-below">
+                                <p><b>{certification.title}</b></p>
+                                
+                              </div>
+                            </Carousel.Item>
+                          ))}
+                        </Carousel>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
@@ -172,7 +218,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background"></img>
     </section>
   );
 };
