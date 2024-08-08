@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/navicon2.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon3 from "../assets/img/github.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -88,7 +88,11 @@ export const NavBar = () => {
                   <img src={navIcon2} alt="" />
                 </a>
                 
-                <a href="#">
+                <a
+                  href="https://github.com/ajinkyajadhav0722"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={navIcon3} alt="" />
                 </a>
               </div>

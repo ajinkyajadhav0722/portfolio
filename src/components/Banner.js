@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome To MY-SPACE</span>
+               
                 <h1>{`Hi! I'm Ajinkya`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Produt Manager", "Data Analyst" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I’m a Master's student in <b>Engineering Management</b> at <b>Northeastern University</b>, with a focus on product management and data analysis. Through projects and internships, I've gained hands-on experience in data-driven decision-making and product strategy. My passion lies in leveraging data to drive innovation and create user-centric products. With skills in SQL, Python, PowerBI, and agile methodologies, I bring a blend of technical and strategic expertise. Let's connect and explore how I can contribute to your team's success with fresh ideas and a collaborative spirit!</p>
                   <button onClick={() => console.log('connect')}>Resume <ArrowDownCircle size={25} /></button>

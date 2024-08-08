@@ -3,7 +3,7 @@ import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/Ajinkya Jadhav.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/navicon2.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon3 from "../assets/img/github.svg";
 
 export const Footer = () => {
   return (
@@ -30,7 +30,11 @@ export const Footer = () => {
                 >
                   <img src={navIcon2} alt="" />
                 </a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+                <a
+                  href="https://github.com/ajinkyajadhav0722"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><img src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>

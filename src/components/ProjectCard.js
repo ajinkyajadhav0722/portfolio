@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Col, Button } from "react-bootstrap";
 import { ProjectModal } from "./ProjectModal";
 
-export const ProjectCard = ({ title, description, extendedDescription, videoUrl, link, imgUrl }) => {
+export const ProjectCard = ({ title, description, extendedDescription, videoUrl, link, imgUrl, technologies, achievements }) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
-  const project = { title, description, extendedDescription, videoUrl, link };
+  const project = { title, description, extendedDescription, videoUrl, link, technologies, achievements };
 
   return (
     <>
@@ -18,7 +18,8 @@ export const ProjectCard = ({ title, description, extendedDescription, videoUrl,
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
-           <br/> <Button variant="link" onClick={handleShowModal}>
+            <br />
+            <Button variant="link" onClick={handleShowModal}>
               See More
             </Button>
           </div>
