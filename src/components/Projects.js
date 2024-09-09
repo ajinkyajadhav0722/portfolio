@@ -9,6 +9,7 @@ import projImg9 from "../assets/img/project9.gif";
 import projImg10 from "../assets/img/t20.png";
 import projImg2 from "../assets/img/project2.gif";
 import projImg3 from "../assets/img/churn.png";
+import projImg11 from "../assets/img/simpl.png"
 import video1 from "../assets/img/video1.mp4";
 import video5 from "../assets/img/project-5.mp4";
 import video6 from "../assets/img/project6.mp4";
@@ -189,6 +190,30 @@ export const Projects = () => {
       
       
         link: "https://github.com/ajinkyajadhav0722/Fashion-up",
+    },
+    {
+      title: "Product Teardown",
+      description: "SIMPL",
+      imgUrl: projImg11,
+      extendedDescription:
+        "In this project, I conducted an in-depth product teardown of Simpl. By analyzing user feedback and assessing the app's core functionalities, I identified gaps that affected the overall user experience. The project required me to apply critical product management skills, such as evaluating customer needs, analyzing pain points, and providing actionable recommendations to improve user retention and satisfaction.I also developed a set of realistic, data-driven solutions to bridge the identified gaps, such as improving technical stability, offering transparent billing, and enhancing the customer support system. This teardown helped me further refine my problem-solving skills and my ability to create user-centric improvements in product development.",
+        technologies:[
+          "Customer Feedback Analysis Tools          ",
+          "API Integration for Billing Systems          ",
+          "User Journey Mapping          ",
+        ],
+        achievements:[
+          "Increased Transparency in Billing: Proposed solutions for clearer and more detailed billing statements to build trust among users.",
+          "Enhanced Customer Support: Suggested the introduction of human-assisted customer support to resolve issues more efficiently and reduce reliance on automated responses.",
+          "Improved App Stability: Identified technical failures and provided insights on improving the app's stability during high-traffic periods.",
+          "Smart Recommendations: AI-powered suggestions based on user preferences, past purchases, and current fashion trends.",
+          "Flexible Payment Options: Recommended implementing monthly billing cycles to accommodate user preferences for easier financial management."
+
+        ]
+        ,
+      
+      
+        link: "https://stirring-saver-cbd.notion.site/Product-Teardown-SIMPL-968490938c744e7788eac750b87e758b",
     },
   ];
 
