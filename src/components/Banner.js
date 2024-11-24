@@ -48,7 +48,7 @@ export const Banner = () => {
   }
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1ZhPDNfl8p5c5kcLeaGRHXwIfZUdi2Atn/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1-jXIA93571hPVsIvqIVmjHKJ5B3eAY-O/view?usp=sharing', '_blank');
   }
 
   return (
