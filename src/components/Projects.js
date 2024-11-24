@@ -10,11 +10,14 @@ import projImg10 from "../assets/img/t20.png";
 import projImg2 from "../assets/img/project2.gif";
 import projImg3 from "../assets/img/churn.png";
 import projImg11 from "../assets/img/simpl.png"
+import projImg12 from "../assets/img/projectimg12.jpg"
 import video1 from "../assets/img/video1.mp4";
 import video5 from "../assets/img/project-5.mp4";
 import video6 from "../assets/img/project6.mp4";
 import video7 from "../assets/img/project7.mp4";
 import video8 from "../assets/img/project8.mp4";
+import video9 from "../assets/img/projimg12.mp4"
+import video10 from "../assets/img/t20.mp4";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import certImg1 from "../assets/img/pm certificate.jpg"; // Add paths for certificate images
 import certImg2 from "../assets/img/cisco certificate.jpg";
@@ -32,7 +35,7 @@ export const Projects = () => {
     {
       title: "T20 world cup 2024-Analysis",
       description: "Interesting insights on the most memorable cricket league",
-
+      videoUrl: video10,
       imgUrl: projImg10,
       extendedDescription:
         "In these project I used the T20 worldcup dataset from kaggele. these dataset had entry of each and every delivery of all matches. I used python for data cleaning like droped some coloumns and divided data into india_batting,india_bowling and all_team. these data was then stored in sql for further analysis and quering, which was then used in PowerBI for creating dashboard. these data provides intresting insights like total runs made, total runs by indian player also some other insights like player with most golden ducks.  .",
@@ -215,11 +218,19 @@ export const Projects = () => {
       
         link: "https://stirring-saver-cbd.notion.site/Product-Teardown-SIMPL-968490938c744e7788eac750b87e758b",
     },
+    {title: "What's Cooking ",
+    description: "Turn your pantry into possibilities with What's Cooking!",
+    extendedDescription:
+    "What's Cooking is an innovative recipe discovery platform crafted to demonstrate key product management skills in action. The app showcases customer-centric design through its intuitive ingredient-based recipe matching and search-by-name functionality, delivering a seamless user experience. By leveraging data-driven decision-making, feature prioritization, and roadmap execution, this project ensures that user needs are met efficiently and effectively. Additionally, it highlights proficiency in cross-functional collaboration, problem-solving, and iterative development to create a product that turns cooking challenges into opportunities for creativity. Whether you’re a home chef or an experimental foodie What’s Cooking transforms your pantry into endless possibilities! ",
+
+    videoUrl: video9,
+    imgUrl: projImg12,
+    link: "//whatscooking0722.web.app/"},
   ];
 
   const certifications = [
     {
-      title: "Google Project Management",
+      title: "Google Project Management", 
 
       imgSrc: certImg1, // Add image source
     },
